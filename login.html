@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DedSec Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="Resources/favicon.png">
+</head>
+<body>
+<div class="background">
+    <img src="Resources/login.jpg" alt="DedSec Background">
+</div>
+
+<div class="login-container">
+    <form id="loginForm">
+        <input id="username" type="text" placeholder="Username" required>
+        <input id="password" type="password" placeholder="Password" required>
+        <button type="button" id="loginButton">Login</button>
+    </form>
+</div>
+<!---changes from here to -->
+<div id="loadingScreen" style="display: none;">
+    <div id="hackingEffect">
+        <p>Accessing... Please Wait.</p>
+        <pre id="hackingText"></pre>
+    </div>
+</div>
+
+
+<!--- here-->
+<script src="login.js"></script>
+</body>
+</html>
